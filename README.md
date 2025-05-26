@@ -25,8 +25,6 @@ This is a TestNG and Selenium-based automation framework for testing the OrangeH
 3. Run the tests using Maven:
    mvn clean test
 
-4. View the test report:
-   Open `test-output/ExtentReport.html` in a browser.
 
 ## Author:
 Noha Nabil
