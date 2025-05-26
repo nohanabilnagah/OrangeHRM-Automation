@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-18T15:03:59 EEST" name="Default suite" finished-at="2025-05-18T15:04:11 EEST" duration-ms="12443">
+    <groups>
+    </groups>
+    <test started-at="2025-05-18T15:03:59 EEST" name="Default test" finished-at="2025-05-18T15:04:11 EEST" duration-ms="12443">
+      <class name="test.AdminCreateUserTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:03:52 EEST" name="startDriver" finished-at="2025-05-18T15:03:59 EEST" duration-ms="7029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:03:59 EEST" name="setup" finished-at="2025-05-18T15:03:59 EEST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:03:59 EEST" name="adminCanLogin" finished-at="2025-05-18T15:04:01 EEST" duration-ms="1810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:01 EEST" name="screenshotOnFailure" finished-at="2025-05-18T15:04:01 EEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminCreateUserTest.adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:01 EEST" name="setup" finished-at="2025-05-18T15:04:01 EEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanCreateUser()[pri:2, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:01 EEST" name="adminCanCreateUser" finished-at="2025-05-18T15:04:08 EEST" depends-on-methods="test.AdminCreateUserTest.adminCanLogin" duration-ms="7503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanCreateUser -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:08 EEST" name="screenshotOnFailure" finished-at="2025-05-18T15:04:08 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanCreateUser status=SUCCESS method=AdminCreateUserTest.adminCanCreateUser()[pri:2, instance:test.AdminCreateUserTest@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:08 EEST" name="setup" finished-at="2025-05-18T15:04:08 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminLogout()[pri:3, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:08 EEST" name="adminLogout" finished-at="2025-05-18T15:04:09 EEST" depends-on-methods="test.AdminCreateUserTest.adminCanCreateUser" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:09 EEST" name="screenshotOnFailure" finished-at="2025-05-18T15:04:09 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminLogout status=SUCCESS method=AdminCreateUserTest.adminLogout()[pri:3, instance:test.AdminCreateUserTest@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:09 EEST" name="setup" finished-at="2025-05-18T15:04:09 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newUserCanLogin()[pri:4, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:09 EEST" name="newUserCanLogin" finished-at="2025-05-18T15:04:11 EEST" depends-on-methods="test.AdminCreateUserTest.adminLogout" duration-ms="1924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@7a8c8dcf]" started-at="2025-05-18T15:04:11 EEST" name="screenshotOnFailure" finished-at="2025-05-18T15:04:11 EEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newUserCanLogin status=SUCCESS method=AdminCreateUserTest.newUserCanLogin()[pri:4, instance:test.AdminCreateUserTest@7a8c8dcf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+      </class> <!-- test.AdminCreateUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
