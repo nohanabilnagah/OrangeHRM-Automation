@@ -1,4 +1,5 @@
 **🧪 OrangeHRM Automation Framework**
+
 A Selenium + TestNG automation framework built to validate the OrangeHRM demo site with a modular Page Object Model (POM) design and multi-browser execution support.
 
 **🚀 Tech Stack**
