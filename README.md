@@ -32,7 +32,7 @@ A **Selenium + TestNG** automation framework built to validate the OrangeHRM dem
 git clone https://github.com/nohanabilnagah/OrangeHRM-Automation.git
 cd OrangeHRM-Automation
 
-### 2️⃣ **Run Tests Using Maven**
+### 2️⃣ Run Tests Using Maven
 
 mvn clean test
 - Tests are executed based on the testng.xml suite located in src/test/resources.
@@ -43,7 +43,7 @@ Each test runs sequentially per browser as configured in testng.xml.
 
 ---
 
-### **📊 Allure Report (After Test Execution)**
+### 📊 Allure Report (After Test Execution)
 
 - Generate Allure Report:
 allure generate allure-results --clean -o allure-report
