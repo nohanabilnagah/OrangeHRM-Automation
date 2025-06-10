@@ -1,277 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="1" failed="2" skipped="10">
+<testng-results ignored="0" total="30" passed="21" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-26T03:00:35 EET" name="OrangeHRM Demo Suite" finished-at="2025-05-26T03:00:37 EET" duration-ms="1889">
+  <suite started-at="2025-06-10T02:11:31 EET" name="OrangeHRM Sequential Suite" finished-at="2025-06-10T02:14:05 EET" duration-ms="153915">
     <groups>
     </groups>
-    <test started-at="2025-05-26T03:00:35 EET" name="Automation Assessment" finished-at="2025-05-26T03:00:37 EET" duration-ms="1889">
-      <class name="test.AdminCreateUserTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@36902638]" started-at="2025-05-26T03:00:37 EET" name="setup" finished-at="2025-05-26T03:00:37 EET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@36902638]" started-at="2025-05-26T03:00:37 EET" name="adminCanLogin" finished-at="2025-05-26T03:00:37 EET" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at pages.LoginPage.enterUsername(LoginPage.java:18)
-at test.AdminCreateUserTest.adminCanLogin(AdminCreateUserTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminCanLogin -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@36902638]" started-at="2025-05-26T03:00:37 EET" name="screenshotOnFailure" finished-at="2025-05-26T03:00:37 EET" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=adminCanLogin status=FAILURE method=AdminCreateUserTest.adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@36902638] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
-at utilities.Helper.captureScreenshot(Helper.java:33)
-at test.TestBase.screenshotOnFailure(TestBase.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="confirmSuccessToast()[pri:3, instance:test.AdminCreateUserTest@36902638]" started-at="2025-05-26T03:00:37 EET" name="confirmSuccessToast" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminCreateUserTest.adminCanCreateUser" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminCreateUserTest.confirmSuccessToast() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.adminCanCreateUser() on instance test.AdminCreateUserTest@36902638]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminCreateUserTest.confirmSuccessToast() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.adminCanCreateUser() on instance test.AdminCreateUserTest@36902638]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- confirmSuccessToast -->
-        <test-method signature="adminCanCreateUser()[pri:2, instance:test.AdminCreateUserTest@36902638]" started-at="2025-05-26T03:00:37 EET" name="adminCanCreateUser" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminCreateUserTest.adminCanLogin" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminCreateUserTest.adminCanCreateUser() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.adminCanLogin() on instance test.AdminCreateUserTest@36902638]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminCreateUserTest.adminCanCreateUser() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.adminCanLogin() on instance test.AdminCreateUserTest@36902638]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminCanCreateUser -->
-        <test-method signature="adminCanLogout()[pri:4, instance:test.AdminCreateUserTest@36902638]" started-at="2025-05-26T03:00:37 EET" name="adminCanLogout" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminCreateUserTest.confirmSuccessToast" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminCreateUserTest.adminCanLogout() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.confirmSuccessToast() on instance test.AdminCreateUserTest@36902638]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminCreateUserTest.adminCanLogout() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.confirmSuccessToast() on instance test.AdminCreateUserTest@36902638]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminCanLogout -->
-        <test-method signature="newUserCanLogin()[pri:5, instance:test.AdminCreateUserTest@36902638]" started-at="2025-05-26T03:00:37 EET" name="newUserCanLogin" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminCreateUserTest.adminCanLogout" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminCreateUserTest.newUserCanLogin() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.adminCanLogout() on instance test.AdminCreateUserTest@36902638]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminCreateUserTest.newUserCanLogin() on instance test.AdminCreateUserTest@36902638 depends on not successfully finished methods 
-[test.AdminCreateUserTest.adminCanLogout() on instance test.AdminCreateUserTest@36902638]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newUserCanLogin -->
-      </class> <!-- test.AdminCreateUserTest -->
+    <test started-at="2025-06-10T02:11:31 EET" name="Chrome - Login" finished-at="2025-06-10T02:11:39 EET" duration-ms="8678">
       <class name="test.AdminLoginTest">
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:test.AdminLoginTest@38c6f217]" started-at="2025-05-26T03:00:32 EET" name="setUpDriver" finished-at="2025-05-26T03:00:35 EET" duration-ms="3825" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:31 EET" name="setUpDriver" finished-at="2025-06-10T02:11:35 EET" duration-ms="4017" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -282,36 +18,470 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="adminCanLogin()[pri:0, instance:test.AdminLoginTest@38c6f217]" started-at="2025-05-26T03:00:35 EET" name="adminCanLogin" finished-at="2025-05-26T03:00:37 EET" duration-ms="1847" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:35 EET" name="setup" finished-at="2025-06-10T02:11:35 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:35 EET" name="adminCanLogin" description="Verify that the admin user can log in successfully" finished-at="2025-06-10T02:11:36 EET" duration-ms="1590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminCanLogin -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminLoginTest@38c6f217]" started-at="2025-05-26T03:00:37 EET" name="screenshotOnFailure" finished-at="2025-05-26T03:00:37 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:36 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:36 EET" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminLoginTest.adminCanLogin()[pri:0, instance:test.AdminLoginTest@38c6f217] output={null}]]]>
+                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminLoginTest.adminCanLogin()[pri:1, instance:test.AdminLoginTest@444548a0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:test.AdminLoginTest@38c6f217]" started-at="2025-05-26T03:00:37 EET" name="stopDriver" finished-at="2025-05-26T03:00:41 EET" duration-ms="3199" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:36 EET" name="setup" finished-at="2025-06-10T02:11:36 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopDriver -->
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogout()[pri:2, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:36 EET" name="adminCanLogout" description="Verify that the admin user can log out" finished-at="2025-06-10T02:11:38 EET" duration-ms="1742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:38 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:38 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogout status=SUCCESS method=AdminLoginTest.adminCanLogout()[pri:2, instance:test.AdminLoginTest@444548a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdminLoginTest@444548a0]" started-at="2025-06-10T02:11:38 EET" name="tearDown" finished-at="2025-06-10T02:11:39 EET" duration-ms="1165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- test.AdminLoginTest -->
+    </test> <!-- Chrome - Login -->
+    <test started-at="2025-06-10T02:11:39 EET" name="Chrome - CreateUser" finished-at="2025-06-10T02:11:56 EET" duration-ms="17165">
+      <class name="test.AdminCreateUserTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:39 EET" name="setUpDriver" finished-at="2025-06-10T02:11:42 EET" duration-ms="3089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:42 EET" name="setup" finished-at="2025-06-10T02:11:42 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:42 EET" name="adminCanLogin" description="Verify that the admin can log into the dashboard" finished-at="2025-06-10T02:11:44 EET" duration-ms="1679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:44 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:44 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminCreateUserTest.adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@31ee96f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:44 EET" name="setup" finished-at="2025-06-10T02:11:44 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanCreateUser()[pri:2, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:44 EET" name="adminCanCreateUser" description="Create a new user from the Admin panel" finished-at="2025-06-10T02:11:50 EET" duration-ms="5489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanCreateUser -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:50 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:50 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanCreateUser status=SUCCESS method=AdminCreateUserTest.adminCanCreateUser()[pri:2, instance:test.AdminCreateUserTest@31ee96f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:50 EET" name="setup" finished-at="2025-06-10T02:11:50 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="confirmSuccessToast()[pri:3, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:50 EET" name="confirmSuccessToast" description="Verify success message appears after user creation" finished-at="2025-06-10T02:11:51 EET" duration-ms="1439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmSuccessToast -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:51 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:51 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmSuccessToast status=SUCCESS method=AdminCreateUserTest.confirmSuccessToast()[pri:3, instance:test.AdminCreateUserTest@31ee96f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:51 EET" name="setup" finished-at="2025-06-10T02:11:51 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogout()[pri:4, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:51 EET" name="adminCanLogout" description="Log out from the admin account" finished-at="2025-06-10T02:11:52 EET" duration-ms="1305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:52 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:52 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogout status=SUCCESS method=AdminCreateUserTest.adminCanLogout()[pri:4, instance:test.AdminCreateUserTest@31ee96f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:52 EET" name="setup" finished-at="2025-06-10T02:11:52 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newUserCanLogin()[pri:5, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:52 EET" name="newUserCanLogin" description="Log in with the newly created user account" finished-at="2025-06-10T02:11:54 EET" duration-ms="1708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:54 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:54 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newUserCanLogin status=SUCCESS method=AdminCreateUserTest.newUserCanLogin()[pri:5, instance:test.AdminCreateUserTest@31ee96f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:54 EET" name="setup" finished-at="2025-06-10T02:11:54 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="newUserCanLogout()[pri:6, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:54 EET" name="newUserCanLogout" description="Log out from the new user account" finished-at="2025-06-10T02:11:55 EET" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:55 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:11:55 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newUserCanLogout status=SUCCESS method=AdminCreateUserTest.newUserCanLogout()[pri:6, instance:test.AdminCreateUserTest@31ee96f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdminCreateUserTest@31ee96f4]" started-at="2025-06-10T02:11:55 EET" name="tearDown" finished-at="2025-06-10T02:11:56 EET" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AdminCreateUserTest -->
+    </test> <!-- Chrome - CreateUser -->
+    <test started-at="2025-06-10T02:11:56 EET" name="Chrome - DisableUser" finished-at="2025-06-10T02:12:19 EET" duration-ms="22055">
       <class name="test.AdminDisableEmployeeTest">
-        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="adminCanLogin" finished-at="2025-05-26T03:00:37 EET" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:11:56 EET" name="setUpDriver" finished-at="2025-06-10T02:12:00 EET" duration-ms="3256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:00 EET" name="setup" finished-at="2025-06-10T02:12:00 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:00 EET" name="adminCanLogin" description="Verify that admin can log in" finished-at="2025-06-10T02:12:01 EET" duration-ms="1727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:01 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:01 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogin()[pri:1, instance:test.AdminDisableEmployeeTest@1eb6e1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:01 EET" name="setup" finished-at="2025-06-10T02:12:01 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanCreateUser()[pri:2, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:01 EET" name="adminCanCreateUser" description="Verify that admin can create a new user" finished-at="2025-06-10T02:12:07 EET" duration-ms="5435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanCreateUser -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:07 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:07 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanCreateUser status=SUCCESS method=AdminDisableEmployeeTest.adminCanCreateUser()[pri:2, instance:test.AdminDisableEmployeeTest@1eb6e1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:07 EET" name="setup" finished-at="2025-06-10T02:12:07 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="confirmSuccessToast()[pri:3, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:07 EET" name="confirmSuccessToast" description="Confirm success toast after creating user" finished-at="2025-06-10T02:12:08 EET" duration-ms="1462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmSuccessToast -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:08 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:08 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmSuccessToast status=SUCCESS method=AdminDisableEmployeeTest.confirmSuccessToast()[pri:3, instance:test.AdminDisableEmployeeTest@1eb6e1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:08 EET" name="setup" finished-at="2025-06-10T02:12:08 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="disableEmployeeUser()[pri:4, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:08 EET" name="disableEmployeeUser" description="Disable the newly created employee user" finished-at="2025-06-10T02:12:13 EET" duration-ms="4900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disableEmployeeUser -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:13 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:13 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=disableEmployeeUser status=SUCCESS method=AdminDisableEmployeeTest.disableEmployeeUser()[pri:4, instance:test.AdminDisableEmployeeTest@1eb6e1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="confirmSuccessToastAfterDisable()[pri:5, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:13 EET" name="confirmSuccessToastAfterDisable" description="Confirm success toast after disabling user" finished-at="2025-06-10T02:12:14 EET" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmSuccessToastAfterDisable -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:13 EET" name="setup" finished-at="2025-06-10T02:12:13 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:14 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:14 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmSuccessToastAfterDisable status=SUCCESS method=AdminDisableEmployeeTest.confirmSuccessToastAfterDisable()[pri:5, instance:test.AdminDisableEmployeeTest@1eb6e1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:14 EET" name="setup" finished-at="2025-06-10T02:12:14 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogout()[pri:6, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:14 EET" name="adminCanLogout" description="Verify that admin can log out successfully" finished-at="2025-06-10T02:12:16 EET" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:16 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:16 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogout status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogout()[pri:6, instance:test.AdminDisableEmployeeTest@1eb6e1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:16 EET" name="setup" finished-at="2025-06-10T02:12:16 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="disabledUserCannotLogin()[pri:7, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:16 EET" name="disabledUserCannotLogin" description="Verify that a disabled user cannot log in" finished-at="2025-06-10T02:12:17 EET" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disabledUserCannotLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:17 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:17 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=disabledUserCannotLogin status=SUCCESS method=AdminDisableEmployeeTest.disabledUserCannotLogin()[pri:7, instance:test.AdminDisableEmployeeTest@1eb6e1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdminDisableEmployeeTest@1eb6e1c]" started-at="2025-06-10T02:12:17 EET" name="tearDown" finished-at="2025-06-10T02:12:19 EET" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AdminDisableEmployeeTest -->
+    </test> <!-- Chrome - DisableUser -->
+    <test started-at="2025-06-10T02:12:19 EET" name="Firefox - Login" finished-at="2025-06-10T02:12:30 EET" duration-ms="10996">
+      <class name="test.AdminLoginTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:19 EET" name="setUpDriver" finished-at="2025-06-10T02:12:23 EET" duration-ms="4816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:23 EET" name="setup" finished-at="2025-06-10T02:12:23 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:23 EET" name="adminCanLogin" description="Verify that the admin user can log in successfully" finished-at="2025-06-10T02:12:25 EET" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:25 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:25 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminLoginTest.adminCanLogin()[pri:1, instance:test.AdminLoginTest@5f303ecd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:25 EET" name="setup" finished-at="2025-06-10T02:12:25 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogout()[pri:2, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:25 EET" name="adminCanLogout" description="Verify that the admin user can log out" finished-at="2025-06-10T02:12:28 EET" duration-ms="2859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:28 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:28 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogout status=SUCCESS method=AdminLoginTest.adminCanLogout()[pri:2, instance:test.AdminLoginTest@5f303ecd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdminLoginTest@5f303ecd]" started-at="2025-06-10T02:12:28 EET" name="tearDown" finished-at="2025-06-10T02:12:30 EET" duration-ms="1749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AdminLoginTest -->
+    </test> <!-- Firefox - Login -->
+    <test started-at="2025-06-10T02:12:30 EET" name="Firefox - CreateUser" finished-at="2025-06-10T02:13:16 EET" duration-ms="45960">
+      <class name="test.AdminCreateUserTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:30 EET" name="setUpDriver" finished-at="2025-06-10T02:12:34 EET" duration-ms="4475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:34 EET" name="setup" finished-at="2025-06-10T02:12:34 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:34 EET" name="adminCanLogin" description="Verify that the admin can log into the dashboard" finished-at="2025-06-10T02:12:36 EET" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:36 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:36 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminCreateUserTest.adminCanLogin()[pri:1, instance:test.AdminCreateUserTest@771db12c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="adminCanCreateUser()[pri:2, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:36 EET" name="adminCanCreateUser" description="Create a new user from the Admin panel" finished-at="2025-06-10T02:12:39 EET" duration-ms="3525" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+              <![CDATA[The element with the reference 490357e6-783d-4d67-a948-2fc21352aaa3 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fd7c4824-8b87-447b-b27f-ffbdc1dd92c7, isElementDisplayed {id=490357e6-783d-4d67-a948-2fc21352aaa3}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (fd7c4824-8b87-447b-b27f-ffbdc1dd92c7)] -> xpath: (//div[@class='oxd-select-text--after'])[1]]
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at pages.LoginPage.enterUsername(LoginPage.java:18)
-at test.AdminDisableEmployeeTest.adminCanLogin(AdminDisableEmployeeTest.java:35)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference 490357e6-783d-4d67-a948-2fc21352aaa3 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fd7c4824-8b87-447b-b27f-ffbdc1dd92c7, isElementDisplayed {id=490357e6-783d-4d67-a948-2fc21352aaa3}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (fd7c4824-8b87-447b-b27f-ffbdc1dd92c7)] -> xpath: (//div[@class='oxd-select-text--after'])[1]]
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at utilities.Helper.waitAndClick(Helper.java:79)
+at pages.AdminPage.clickUserRoleDropdown(AdminPage.java:41)
+at test.AdminCreateUserTest.adminCanCreateUser(AdminCreateUserTest.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -346,41 +516,53 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminCanLogin -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="setup" finished-at="2025-05-26T03:00:37 EET" duration-ms="0" status="PASS">
+        </test-method> <!-- adminCanCreateUser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:36 EET" name="setup" finished-at="2025-06-10T02:12:36 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="screenshotOnFailure" finished-at="2025-05-26T03:00:37 EET" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:39 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:39 EET" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=adminCanLogin status=FAILURE method=AdminDisableEmployeeTest.adminCanLogin()[pri:1, instance:test.AdminDisableEmployeeTest@223d2c72] output={null}]]]>
+                <![CDATA[[TestResult name=adminCanCreateUser status=FAILURE method=AdminCreateUserTest.adminCanCreateUser()[pri:2, instance:test.AdminCreateUserTest@771db12c] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="confirmSuccessToast()[pri:3, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:39 EET" name="confirmSuccessToast" description="Verify success message appears after user creation" finished-at="2025-06-10T02:12:50 EET" duration-ms="10561" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
-at utilities.Helper.captureScreenshot(Helper.java:33)
-at test.TestBase.screenshotOnFailure(TestBase.java:48)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.Helper.waitForElementVisible(Helper.java:90)
+at pages.AdminPage.getSuccessToast(AdminPage.java:146)
+at test.AdminCreateUserTest.confirmSuccessToast(AdminCreateUserTest.java:76)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -409,210 +591,76 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFailure -->
-        <test-method signature="adminCanCreateUser()[pri:2, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="adminCanCreateUser" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminDisableEmployeeTest.adminCanLogin" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminDisableEmployeeTest.adminCanCreateUser() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.adminCanLogin() on instance test.AdminDisableEmployeeTest@223d2c72]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminDisableEmployeeTest.adminCanCreateUser() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.adminCanLogin() on instance test.AdminDisableEmployeeTest@223d2c72]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminCanCreateUser -->
-        <test-method signature="confirmSuccessToast()[pri:3, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="confirmSuccessToast" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminDisableEmployeeTest.adminCanCreateUser" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminDisableEmployeeTest.confirmSuccessToast() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.adminCanCreateUser() on instance test.AdminDisableEmployeeTest@223d2c72]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminDisableEmployeeTest.confirmSuccessToast() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.adminCanCreateUser() on instance test.AdminDisableEmployeeTest@223d2c72]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmSuccessToast -->
-        <test-method signature="disableEmployeeUser()[pri:4, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="disableEmployeeUser" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminDisableEmployeeTest.confirmSuccessToast" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminDisableEmployeeTest.disableEmployeeUser() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.confirmSuccessToast() on instance test.AdminDisableEmployeeTest@223d2c72]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminDisableEmployeeTest.disableEmployeeUser() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.confirmSuccessToast() on instance test.AdminDisableEmployeeTest@223d2c72]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:39 EET" name="setup" finished-at="2025-06-10T02:12:39 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- disableEmployeeUser -->
-        <test-method signature="confirmSuccessToastAfterDisable()[pri:5, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="confirmSuccessToastAfterDisable" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminDisableEmployeeTest.disableEmployeeUser" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.disableEmployeeUser() on instance test.AdminDisableEmployeeTest@223d2c72]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.disableEmployeeUser() on instance test.AdminDisableEmployeeTest@223d2c72]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:50 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:50 EET" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmSuccessToast status=FAILURE method=AdminCreateUserTest.confirmSuccessToast()[pri:3, instance:test.AdminCreateUserTest@771db12c] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- confirmSuccessToastAfterDisable -->
-        <test-method signature="adminCanLogout()[pri:6, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="adminCanLogout" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method test.AdminDisableEmployeeTest.adminCanLogout() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable() on instance test.AdminDisableEmployeeTest@223d2c72]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminDisableEmployeeTest.adminCanLogout() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable() on instance test.AdminDisableEmployeeTest@223d2c72]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:50 EET" name="setup" finished-at="2025-06-10T02:12:50 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogout()[pri:4, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:50 EET" name="adminCanLogout" description="Log out from the admin account" finished-at="2025-06-10T02:12:51 EET" duration-ms="1484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminCanLogout -->
-        <test-method signature="disabledUserCannotLogin()[pri:7, instance:test.AdminDisableEmployeeTest@223d2c72]" started-at="2025-05-26T03:00:37 EET" name="disabledUserCannotLogin" finished-at="2025-05-26T03:00:37 EET" depends-on-methods="test.AdminDisableEmployeeTest.adminCanLogout" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:51 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:12:51 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogout status=SUCCESS method=AdminCreateUserTest.adminCanLogout()[pri:4, instance:test.AdminCreateUserTest@771db12c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="newUserCanLogin()[pri:5, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:51 EET" name="newUserCanLogin" description="Log in with the newly created user account" finished-at="2025-06-10T02:13:03 EET" duration-ms="11486" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Method test.AdminDisableEmployeeTest.disabledUserCannotLogin() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.adminCanLogout() on instance test.AdminDisableEmployeeTest@223d2c72]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: p.oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method test.AdminDisableEmployeeTest.disabledUserCannotLogin() on instance test.AdminDisableEmployeeTest@223d2c72 depends on not successfully finished methods 
-[test.AdminDisableEmployeeTest.adminCanLogout() on instance test.AdminDisableEmployeeTest@223d2c72]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: p.oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.Helper.waitForElementVisible(Helper.java:90)
+at pages.AdminDashboardPage.getProfileName(AdminDashboardPage.java:39)
+at test.AdminCreateUserTest.newUserCanLogin(AdminCreateUserTest.java:105)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -637,11 +685,552 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserCanLogin -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:12:51 EET" name="setup" finished-at="2025-06-10T02:12:51 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:13:03 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:13:03 EET" duration-ms="124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newUserCanLogin status=FAILURE method=AdminCreateUserTest.newUserCanLogin()[pri:5, instance:test.AdminCreateUserTest@771db12c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method signature="newUserCanLogout()[pri:6, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:13:03 EET" name="newUserCanLogout" description="Log out from the new user account" finished-at="2025-06-10T02:13:14 EET" duration-ms="10547" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: p.oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: p.oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.Helper.waitForElementClickable(Helper.java:85)
+at pages.AdminDashboardPage.openProfileDropdown(AdminDashboardPage.java:19)
+at test.AdminCreateUserTest.newUserCanLogout(AdminCreateUserTest.java:125)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserCanLogout -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:13:03 EET" name="setup" finished-at="2025-06-10T02:13:03 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:13:14 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:13:14 EET" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newUserCanLogout status=FAILURE method=AdminCreateUserTest.newUserCanLogout()[pri:6, instance:test.AdminCreateUserTest@771db12c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdminCreateUserTest@771db12c]" started-at="2025-06-10T02:13:14 EET" name="tearDown" finished-at="2025-06-10T02:13:16 EET" duration-ms="1730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AdminCreateUserTest -->
+    </test> <!-- Firefox - CreateUser -->
+    <test started-at="2025-06-10T02:13:16 EET" name="Firefox - DisableUser" finished-at="2025-06-10T02:14:05 EET" duration-ms="49012">
+      <class name="test.AdminDisableEmployeeTest">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:16 EET" name="setUpDriver" finished-at="2025-06-10T02:13:20 EET" duration-ms="4639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:20 EET" name="setup" finished-at="2025-06-10T02:13:20 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogin()[pri:1, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:20 EET" name="adminCanLogin" description="Verify that admin can log in" finished-at="2025-06-10T02:13:22 EET" duration-ms="1552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:22 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:13:22 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogin status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogin()[pri:1, instance:test.AdminDisableEmployeeTest@3c017078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:22 EET" name="setup" finished-at="2025-06-10T02:13:22 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanCreateUser()[pri:2, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:22 EET" name="adminCanCreateUser" description="Verify that admin can create a new user" finished-at="2025-06-10T02:13:25 EET" duration-ms="3524" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element with the reference 31a6c772-f79c-4466-b32f-890eed890c6a is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [93dd0729-e89d-4788-a447-f6ce51e8f5ca, isElementDisplayed {id=31a6c772-f79c-4466-b32f-890eed890c6a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (93dd0729-e89d-4788-a447-f6ce51e8f5ca)] -> xpath: (//div[@class='oxd-select-text--after'])[1]]
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference 31a6c772-f79c-4466-b32f-890eed890c6a is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [93dd0729-e89d-4788-a447-f6ce51e8f5ca, isElementDisplayed {id=31a6c772-f79c-4466-b32f-890eed890c6a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (93dd0729-e89d-4788-a447-f6ce51e8f5ca)] -> xpath: (//div[@class='oxd-select-text--after'])[1]]
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at utilities.Helper.waitAndClick(Helper.java:79)
+at pages.AdminPage.clickUserRoleDropdown(AdminPage.java:41)
+at test.AdminDisableEmployeeTest.adminCanCreateUser(AdminDisableEmployeeTest.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanCreateUser -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:25 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:13:25 EET" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanCreateUser status=FAILURE method=AdminDisableEmployeeTest.adminCanCreateUser()[pri:2, instance:test.AdminDisableEmployeeTest@3c017078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:25 EET" name="setup" finished-at="2025-06-10T02:13:25 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="confirmSuccessToast()[pri:3, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:25 EET" name="confirmSuccessToast" description="Confirm success toast after creating user" finished-at="2025-06-10T02:13:36 EET" duration-ms="10536" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.Helper.waitForElementVisible(Helper.java:90)
+at pages.AdminPage.getSuccessToast(AdminPage.java:146)
+at test.AdminDisableEmployeeTest.confirmSuccessToast(AdminDisableEmployeeTest.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmSuccessToast -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:36 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:13:36 EET" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmSuccessToast status=FAILURE method=AdminDisableEmployeeTest.confirmSuccessToast()[pri:3, instance:test.AdminDisableEmployeeTest@3c017078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:36 EET" name="setup" finished-at="2025-06-10T02:13:36 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="disableEmployeeUser()[pri:4, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:36 EET" name="disableEmployeeUser" description="Disable the newly created employee user" finished-at="2025-06-10T02:13:49 EET" duration-ms="13005" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role='listbox'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role='listbox'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.Helper.waitForElementVisible(Helper.java:90)
+at pages.AdminPage.changeStatusToDisabled(AdminPage.java:209)
+at test.AdminDisableEmployeeTest.disableEmployeeUser(AdminDisableEmployeeTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disableEmployeeUser -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:49 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:13:49 EET" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=disableEmployeeUser status=FAILURE method=AdminDisableEmployeeTest.disableEmployeeUser()[pri:4, instance:test.AdminDisableEmployeeTest@3c017078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:49 EET" name="setup" finished-at="2025-06-10T02:13:49 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="confirmSuccessToastAfterDisable()[pri:5, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:13:49 EET" name="confirmSuccessToastAfterDisable" description="Confirm success toast after disabling user" finished-at="2025-06-10T02:14:00 EET" duration-ms="10527" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utilities.Helper.waitForElementVisible(Helper.java:90)
+at pages.AdminPage.getSuccessToast(AdminPage.java:146)
+at test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable(AdminDisableEmployeeTest.java:105)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmSuccessToastAfterDisable -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:00 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:14:00 EET" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmSuccessToastAfterDisable status=FAILURE method=AdminDisableEmployeeTest.confirmSuccessToastAfterDisable()[pri:5, instance:test.AdminDisableEmployeeTest@3c017078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:00 EET" name="setup" finished-at="2025-06-10T02:14:00 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminCanLogout()[pri:6, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:00 EET" name="adminCanLogout" description="Verify that admin can log out successfully" finished-at="2025-06-10T02:14:01 EET" duration-ms="1536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCanLogout -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:01 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:14:01 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminCanLogout status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogout()[pri:6, instance:test.AdminDisableEmployeeTest@3c017078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:01 EET" name="setup" finished-at="2025-06-10T02:14:01 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="disabledUserCannotLogin()[pri:7, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:01 EET" name="disabledUserCannotLogin" description="Verify that a disabled user cannot log in" finished-at="2025-06-10T02:14:03 EET" duration-ms="1299" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected 'Account disabled' error message not found. expected [Account disabled] but found [Invalid credentials]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected 'Account disabled' error message not found. expected [Account disabled] but found [Invalid credentials]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at test.AdminDisableEmployeeTest.disabledUserCannotLogin(AdminDisableEmployeeTest.java:142)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disabledUserCannotLogin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:03 EET" name="screenshotOnFailure" finished-at="2025-06-10T02:14:03 EET" duration-ms="126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=disabledUserCannotLogin status=FAILURE method=AdminDisableEmployeeTest.disabledUserCannotLogin()[pri:7, instance:test.AdminDisableEmployeeTest@3c017078] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AdminDisableEmployeeTest@3c017078]" started-at="2025-06-10T02:14:03 EET" name="tearDown" finished-at="2025-06-10T02:14:05 EET" duration-ms="1713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- test.AdminDisableEmployeeTest -->
-    </test> <!-- Automation Assessment -->
-  </suite> <!-- OrangeHRM Demo Suite -->
+    </test> <!-- Firefox - DisableUser -->
+  </suite> <!-- OrangeHRM Sequential Suite -->
 </testng-results>

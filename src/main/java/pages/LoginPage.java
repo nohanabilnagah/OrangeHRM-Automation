@@ -14,16 +14,16 @@ public class LoginPage {
 	}
 
 
-	public void enterUsername(String username) {
+	public void enterUsername(String adminUsername) {
 		WebElement usernameLocator = driver.findElement(By.name("username"));
 		usernameLocator.clear();
-		usernameLocator.sendKeys(username);
+		usernameLocator.sendKeys(adminUsername);
 	}
 
-	public void enterPassword(String password) {
+	public void enterPassword(String adminPassword) {
 		WebElement passwordLocator = driver.findElement(By.name("password"));
 		passwordLocator.clear();
-		passwordLocator.sendKeys(password);
+		passwordLocator.sendKeys(adminPassword);
 	}
 
 	public void clickLoginButton() {

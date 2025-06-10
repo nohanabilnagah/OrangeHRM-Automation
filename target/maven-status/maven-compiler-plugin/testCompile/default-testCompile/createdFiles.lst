@@ -1,3 +1,4 @@
+utilities\TestData.class
 test\AdminDisableEmployeeTest.class
 test\AdminCreateUserTest.class
 test\AdminLoginTest.class

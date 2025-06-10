@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRM Class-Synchronized Suite" parallel="tests" thread-count="2">
+
+  <!-- STEP 1: Run AdminLoginTest in parallel on both browsers -->
+  <test name="Chrome - Login">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminLoginTest"/>
+    </classes>
+  </test>
+
+  <test name="Firefox - Login">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.AdminLoginTest"/>
+    </classes>
+  </test>
+
+  <!-- STEP 2: Run AdminCreateUserTest in parallel after Login step -->
+  <test name="Chrome - CreateUser">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminCreateUserTest"/>
+    </classes>
+  </test>
+
+  <test name="Firefox - CreateUser">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.AdminCreateUserTest"/>
+    </classes>
+  </test>
+
+  <!-- STEP 3: Run AdminDisableEmployeeTest in parallel after CreateUser step -->
+  <test name="Chrome - DisableUser">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminDisableEmployeeTest"/>
+    </classes>
+  </test>
+
+  <test name="Firefox - DisableUser">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.AdminDisableEmployeeTest"/>
+    </classes>
+  </test>
+
+</suite>
+
+==========================================================================
+
+package utilities;
+
+import java.io.File;
+import java.io.IOException;
+
+public class TestSyncBarrier {
+
+    // Folder to store sync marker files
+    private static final String SYNC_FOLDER = "sync-locks/";
+
+    // Wait until another thread creates the marker file
+    public static void waitFor(String stepName) {
+        File file = new File(SYNC_FOLDER + stepName + ".done");
+        int maxWaitSeconds = 60;
+        int waited = 0;
+
+        while (!file.exists() && waited < maxWaitSeconds) {
+            Helper.sleep(1000); // wait 1 sec
+            waited++;
+        }
+
+        if (!file.exists()) {
+            throw new RuntimeException("Timeout waiting for sync: " + stepName);
+        }
+    }
+
+    // Create marker file to signal this step is done
+    public static void markDone(String stepName) {
+        try {
+            File dir = new File(SYNC_FOLDER);
+            if (!dir.exists() && !dir.mkdir()) {
+                throw new IOException("Failed to create sync folder");
+            }
+
+            File file = new File(SYNC_FOLDER + stepName + ".done");
+            if (!file.exists() && !file.createNewFile()) {
+                throw new IOException("Failed to create sync file: " + stepName);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to mark sync step: " + stepName, e);
+        }
+    }
+}
