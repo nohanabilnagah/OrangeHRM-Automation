@@ -42,18 +42,16 @@ Chrome and Firefox are supported.
 
 Each test runs sequentially per browser as configured in testng.xml.
 
-📊 Allure Report (After Test Execution)
-Generate Allure Report:
-bash
-Copy
-Edit
+---
+
+##📊 Allure Report (After Test Execution)
+- Generate Allure Report:
 allure generate allure-results --clean -o allure-report
-View Allure Report:
-bash
-Copy
-Edit
+- View Allure Report:
 allure open allure-report
 💡 Note: Make sure the Allure CLI is installed. Install it via Allure CLI installation guide.
 
-👩‍💻 Author
+---
+
+##👩‍💻 Author
 Noha Nabil
