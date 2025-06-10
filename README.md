@@ -26,32 +26,48 @@ A **Selenium + TestNG** automation framework built to validate the OrangeHRM dem
 
 ## 🧭 How to Run the Tests
 
-### 1️⃣ Clone the Repository
+### 1️⃣ **Clone the Repository**
 
 ```bash
 git clone https://github.com/nohanabilnagah/OrangeHRM-Automation.git
 cd OrangeHRM-Automation
+```
 
-### 2️⃣ Run Tests Using Maven
+### 2️⃣ **Run Tests Using Maven**
 
+```bash
 mvn clean test
-Tests are executed based on the testng.xml suite located in src/test/resources.
+```
 
-🌐 Parallel Browser Execution
-Chrome and Firefox are supported.
-
-Each test runs sequentially per browser as configured in testng.xml.
+Tests are executed based on the `testng.xml` suite located in `src/test/resources`.
 
 ---
 
-##📊 Allure Report (After Test Execution)
-- Generate Allure Report:
+## 🌐 Parallel Browser Execution
+
+- Chrome and Firefox are supported.  
+- Each test runs sequentially per browser as configured in `testng.xml`.
+
+---
+
+## 📊 Allure Report (After Test Execution)
+
+### 🔧 Generate Allure Report:
+
+```bash
 allure generate allure-results --clean -o allure-report
-- View Allure Report:
+```
+
+### 🔍 View Allure Report:
+
+```bash
 allure open allure-report
-💡 Note: Make sure the Allure CLI is installed. Install it via Allure CLI installation guide.
+```
+
+> 💡 **Note:** Make sure the [Allure CLI](https://docs.qameta.io/allure/#_installing_a_commandline) is installed.
 
 ---
 
-##👩‍💻 Author
-Noha Nabil
+## 👩‍💻 Author
+
+**Noha Nabil**
