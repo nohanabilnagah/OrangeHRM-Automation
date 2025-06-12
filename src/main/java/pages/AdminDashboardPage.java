@@ -14,24 +14,17 @@ public class AdminDashboardPage {
 		this.driver = driver;
 	}
 
+
 	public void openProfileDropdown() {
 		// Wait until the profile dropdown tab is clickable, then click it
-		WebElement profileDropdownLocator = Helper.waitForElementClickable(
-				driver,
-				By.cssSelector("p.oxd-userdropdown-name"),
-				10
-		);
-		profileDropdownLocator.click();
+		WebElement profileDropdownLocator = driver.findElement(By.cssSelector("p.oxd-userdropdown-name"));
+		Helper.waitAndClick(driver, profileDropdownLocator, 10);
 	}
 
 	public void clickLogoutButton() {
 		// Wait until the “Logout” link is clickable, then click it
-		WebElement logoutBtnLocator = Helper.waitForElementClickable(
-				driver,
-				By.linkText("Logout"),
-				10
-		);
-		logoutBtnLocator.click();
+		WebElement logoutBtnLocator = driver.findElement(By.linkText("Logout"));
+		Helper.waitAndClick(driver, logoutBtnLocator, 10);
 	}
 
 	public String getProfileName() {

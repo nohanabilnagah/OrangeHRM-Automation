@@ -15,6 +15,7 @@ public class AdminPage {
 		this.driver = driver;
 	}
 
+
 	// Scenario 1 - Create User
 
 	public void clickAdminTab() {
@@ -29,27 +30,9 @@ public class AdminPage {
 	}
 
 	public void clickUserRoleDropdown() {
-		// Locate the user role dropdown toggle element
-		WebElement userRoleDropdownLocator = driver.findElement(By.xpath("(//div[@class='oxd-select-text--after'])[1]"));
-
-		// Add extra wait if browser is Firefox to help with flaky dropdown clicks
-		if (utilities.Browser.getBrowserName().equals("firefox")) {
-			Helper.sleep(1500);  // 1.5 seconds pause before clicking dropdown
-		}
-
-		// Wait until the dropdown toggle is clickable and click it to open the dropdown list
-		Helper.waitAndClick(driver, userRoleDropdownLocator, 10);
-
-		// Wait until the dropdown list container is visible on the page
-		WebElement dropdownList = Helper.waitForElementVisible(driver, By.xpath("//div[@role='listbox']"), 10);
-
-		// Find the "ESS" option inside the visible dropdown list (no explicit wait here)
-		WebElement essOption = dropdownList.findElement(By.xpath(".//span[text()='ESS']"));
-
-		// Wait until the ESS option is clickable and click it
-		Helper.waitAndClick(driver, essOption, 10);
+		By userRoleDropdownLocator = By.xpath("(//div[@class='oxd-select-text--after'])[1]");
+		Helper.waitAndSelect(driver, userRoleDropdownLocator, "ESS", 10);
 	}
-
 
 	public void enterEmployeeName(String employeeName) {
 		// Locate employee name input field (by placeholder)
@@ -106,16 +89,16 @@ public class AdminPage {
 
 		// Click on the first suggestion available
 		System.out.println("Clicking first suggestion: " + suggestions.get(0).getText());
-		Helper.waitAndClick(driver, suggestions.get(0), 10);
+		Helper.waitAndClick(driver, suggestions.get(0), 20);
 	}
+
 
 
 	public void clickStatusDropdown() {
-		WebElement statusDropdownLocator = driver.findElement(By.xpath("(//div[@class='oxd-select-text--after'])[2]"));
-		Helper.waitAndClick(driver, statusDropdownLocator, 10);
-		WebElement enabledOption = driver.findElement(By.xpath("//span[text()='Enabled']"));
-		Helper.waitAndClick(driver, enabledOption, 10);
+		By statusDropdownLocator = By.xpath("(//div[@class='oxd-select-text--after'])[2]");
+		Helper.waitAndSelect(driver, statusDropdownLocator, "Enabled", 20);
 	}
+
 
 	public void enterNewUsername(String newUsername) {
 		WebElement newUsernameLocator = driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]"));
@@ -137,14 +120,14 @@ public class AdminPage {
 
 	public void clickSaveButton() {
 		WebElement saveBtnLocator = driver.findElement(By.cssSelector("button[type='submit']"));
-		Helper.waitAndClick(driver, saveBtnLocator, 10);
+		Helper.waitAndClick(driver, saveBtnLocator, 20);
 	}
 
 	public WebElement getSuccessToast()
 	{
 		// Wait for the success toast to be visible, then return it
 		return utilities.Helper.waitForElementVisible(driver,
-				By.cssSelector("div.oxd-toast-content--success"), 10);
+				By.cssSelector("div.oxd-toast-content--success"), 20);
 	}
 
 	// Scenario 2 - Disable User
@@ -156,99 +139,36 @@ public class AdminPage {
 	}
 
 	public void filterByUserRole() {
-		WebElement filterUserRoleDropdownLocator = driver.findElement(By.xpath("(//div[@class='oxd-select-text--after'])[1]"));
-		Helper.waitAndClick(driver, filterUserRoleDropdownLocator, 10);
-		WebElement essOption = driver.findElement(By.xpath("//span[text()='ESS']"));
-		Helper.waitAndClick(driver, essOption, 10);
-	}
-
-	public void filterByEmployeeName(String employeeName) {
-		WebElement filterEmployeeNameLocator = driver.findElement(By.xpath("//input[@placeholder='Type for hints...']"));
-		filterEmployeeNameLocator.clear();
-		filterEmployeeNameLocator.sendKeys(employeeName);
-		WebElement employeeNameSuggestion = Helper.waitForElementVisible(driver,
-				By.xpath("//div[@class='oxd-autocomplete-dropdown --positon-bottom']//span"), 10);
-		Helper.waitAndClick(driver, employeeNameSuggestion, 10);
+		By filterUserRoleDropdownLocator = By.xpath("(//div[@class='oxd-select-text--after'])[1]");
+		Helper.waitAndSelect(driver, filterUserRoleDropdownLocator, "ESS", 20);
 	}
 
 	public void filterByStatus() {
-		WebElement filterStatusDropdownLocator = driver.findElement(By.xpath("(//div[@class='oxd-select-text--after'])[2]"));
-		Helper.waitAndClick(driver, filterStatusDropdownLocator, 10);
-		WebElement enabledOption = driver.findElement(By.xpath("//span[text()='Enabled']"));
-		Helper.waitAndClick(driver, enabledOption, 10);
+		By filterStatusDropdownLocator = By.xpath("(//div[@class='oxd-select-text--after'])[2]");
+		Helper.waitAndSelect(driver, filterStatusDropdownLocator, "Enabled", 20);
 	}
 
 	public void clickSearchButton() {
 		WebElement searchBtnLocator = driver.findElement(By.xpath("//button[@type='submit']"));
-		Helper.waitAndClick(driver, searchBtnLocator, 10);
+		Helper.waitAndClick(driver, searchBtnLocator, 20);
 	}
 
 	public void clickEditAction() {
 		WebElement editIconLocator = driver.findElement(By.cssSelector("i.bi-pencil-fill"));
-		Helper.waitAndClick(driver, editIconLocator, 10);
+		Helper.waitAndClick(driver, editIconLocator, 30);
 	}
 
 	public void changeStatusToDisabled() {
-		// 1. Locate the Status dropdown toggle element
-		WebElement statusDropdownToggle = Helper.waitForElementClickable(driver,
-				By.xpath("//label[text()='Status']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text')]"),
-				10);
-
-		// 2. Click the dropdown toggle to open the list
-		// Use JavaScript click as a fallback if normal click fails
-		try {
-			statusDropdownToggle.click();
-		} catch (Exception e) {
-			((JavascriptExecutor) driver).executeScript("arguments[0].click();", statusDropdownToggle);
-		}
-
-		// 3. Wait briefly for dropdown options to render
-		Helper.sleep(700);
-
-		// 4. Now locate the dropdown options container
-		WebElement dropdownList = Helper.waitForElementVisible(driver,
-				By.xpath("//div[@role='listbox']"),
-				10);
-
-		// 5. Locate all options inside the dropdown list
-		List<WebElement> options = dropdownList.findElements(By.xpath(".//div[@role='option']"));
-
-		// 6. Debug output of options
-		System.out.println("Status dropdown options:");
-		for (WebElement option : options) {
-			System.out.println("- " + option.getText());
-		}
-
-		// 7. Loop through options and click "Disabled"
-		boolean disabledFound = false;
-		for (WebElement option : options) {
-			if (option.getText().trim().equalsIgnoreCase("Disabled")) {
-				try {
-					option.click();
-				} catch (Exception e) {
-					// fallback: JS click
-					((JavascriptExecutor) driver).executeScript("arguments[0].click();", option);
-				}
-				disabledFound = true;
-				break;
-			}
-		}
-
-		if (!disabledFound) {
-			throw new RuntimeException("Could not find 'Disabled' option in Status dropdown.");
-		}
-
-		// 8. Optional: wait to ensure status is set
-		Helper.sleep(500);
+		By statusDropdownToggle = By.xpath("//label[text()='Status']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text')]");
+		Helper.waitAndSelect(driver, statusDropdownToggle, "Disabled", 20);
 	}
 
 	public void clickSaveButtonAfterEdit() {
 		WebElement saveBtnAfterEditLocator = driver.findElement(By.cssSelector("button[type='submit']"));
-		Helper.waitAndClick(driver, saveBtnAfterEditLocator, 10);
+		Helper.waitAndClick(driver, saveBtnAfterEditLocator, 20);
 	}
 
 	public WebElement getSuccessToastAfterEdit() {
 		return driver.findElement(By.cssSelector("div.oxd-toast-content--success"));
 	}
 }
-

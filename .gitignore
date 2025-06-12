@@ -1,0 +1,3 @@
+# Ignore Allure report folders
+allure-results/
+allure-report/

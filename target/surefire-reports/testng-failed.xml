@@ -4,6 +4,34 @@
   <listeners>
     <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
   </listeners>
+  <test thread-count="5" name="Chrome - Login(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminLoginTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="adminCanLogin"/>
+          <include name="screenshotOnFailure"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.AdminLoginTest -->
+    </classes>
+  </test> <!-- Chrome - Login(failed) -->
+  <test thread-count="5" name="Chrome - DisableUser(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminDisableEmployeeTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="adminCanLogin"/>
+          <include name="screenshotOnFailure"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.AdminDisableEmployeeTest -->
+    </classes>
+  </test> <!-- Chrome - DisableUser(failed) -->
   <test thread-count="5" name="Firefox - CreateUser(failed)" verbose="0">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -33,8 +61,8 @@
           <include name="screenshotOnFailure"/>
           <include name="disabledUserCannotLogin"/>
           <include name="tearDown"/>
-          <include name="setup"/>
           <include name="disableEmployeeUser"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- test.AdminDisableEmployeeTest -->
     </classes>

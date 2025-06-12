@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 11 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-OrangeHRM_Sequential_Suite" class="navigator-link ">
-                    <span>D:\NOHA\Software Engineering\Noha_Projects\OrangeHRM\src\test\resources\testng.xml</span>
+                    <span>D:\Automation\DEMO\OrangeHRM\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">30 methods, 9 failed,   21 passed</span>
+                    <span class="method-stats">30 methods, 11 failed,   19 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -109,6 +109,16 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Sequential_Suite" title="test.AdminDisableEmployeeTest" class="method navigator-link" hash-for-method="adminCanCreateUser">adminCanCreateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Sequential_Suite" title="test.AdminLoginTest" class="method navigator-link" hash-for-method="adminCanLogin">adminCanLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Sequential_Suite" title="test.AdminDisableEmployeeTest" class="method navigator-link" hash-for-method="adminCanLogin">adminCanLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,17 +177,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Sequential_Suite" title="test.AdminLoginTest" class="method navigator-link" hash-for-method="adminCanLogin">adminCanLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Sequential_Suite" title="test.AdminCreateUserTest" class="method navigator-link" hash-for-method="adminCanLogin">adminCanLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Sequential_Suite" title="test.AdminDisableEmployeeTest" class="method navigator-link" hash-for-method="adminCanLogin">adminCanLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -275,136 +275,6 @@
           <div class="suite-OrangeHRM_Sequential_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">test.AdminDisableEmployeeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanCreateUser">
-                  </a> <!-- adminCanCreateUser -->
-                  <span class="method-name">adminCanCreateUser</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element with the reference 31a6c772-f79c-4466-b32f-890eed890c6a is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [93dd0729-e89d-4788-a447-f6ce51e8f5ca, isElementDisplayed {id=31a6c772-f79c-4466-b32f-890eed890c6a}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (93dd0729-e89d-4788-a447-f6ce51e8f5ca)] -&gt; xpath: (//div[@class=&apos;oxd-select-text--after&apos;])[1]]
-Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at utilities.Helper.waitAndClick(Helper.java:79)
-	at pages.AdminPage.clickUserRoleDropdown(AdminPage.java:41)
-	at test.AdminDisableEmployeeTest.adminCanCreateUser(AdminDisableEmployeeTest.java:64)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify that admin can create a new user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="confirmSuccessToast">
-                  </a> <!-- confirmSuccessToast -->
-                  <span class="method-name">confirmSuccessToast</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.Helper.waitForElementVisible(Helper.java:90)
-	at pages.AdminPage.getSuccessToast(AdminPage.java:146)
-	at test.AdminDisableEmployeeTest.confirmSuccessToast(AdminDisableEmployeeTest.java:78)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Confirm success toast after creating user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="confirmSuccessToastAfterDisable">
-                  </a> <!-- confirmSuccessToastAfterDisable -->
-                  <span class="method-name">confirmSuccessToastAfterDisable</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.Helper.waitForElementVisible(Helper.java:90)
-	at pages.AdminPage.getSuccessToast(AdminPage.java:146)
-	at test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable(AdminDisableEmployeeTest.java:105)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Confirm success toast after disabling user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="disableEmployeeUser">
-                  </a> <!-- disableEmployeeUser -->
-                  <span class="method-name">disableEmployeeUser</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role=&apos;listbox&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20208, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.Helper.waitForElementVisible(Helper.java:90)
-	at pages.AdminPage.changeStatusToDisabled(AdminPage.java:209)
-	at test.AdminDisableEmployeeTest.disableEmployeeUser(AdminDisableEmployeeTest.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Disable the newly created employee user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="disabledUserCannotLogin">
-                  </a> <!-- disabledUserCannotLogin -->
-                  <span class="method-name">disabledUserCannotLogin</span>
-                  <div class="stack-trace">java.lang.AssertionError: Expected &apos;Account disabled&apos; error message not found. expected [Account disabled] but found [Invalid credentials]
-	at test.AdminDisableEmployeeTest.disabledUserCannotLogin(AdminDisableEmployeeTest.java:142)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify that a disabled user cannot log in)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Sequential_Suite-class-failed -->
-          <div class="suite-OrangeHRM_Sequential_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">test.AdminCreateUserTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -413,15 +283,15 @@ Session ID: 93dd0729-e89d-4788-a447-f6ce51e8f5ca
                   <a name="adminCanCreateUser">
                   </a> <!-- adminCanCreateUser -->
                   <span class="method-name">adminCanCreateUser</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element with the reference 490357e6-783d-4d67-a948-2fc21352aaa3 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element with the reference b7f3b286-b88c-4023-95f7-3fdf8596c0b0 is stale; either its node document is not the active document, or it is no longer connected to the DOM
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [fd7c4824-8b87-447b-b27f-ffbdc1dd92c7, isElementDisplayed {id=490357e6-783d-4d67-a948-2fc21352aaa3}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (fd7c4824-8b87-447b-b27f-ffbdc1dd92c7)] -&gt; xpath: (//div[@class=&apos;oxd-select-text--after&apos;])[1]]
-Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
+Command: [5f311621-8d24-4089-94ac-380d60ab17d5, sendKeysToElement {value=[Ljava.lang.CharSequence;@14d18029, id=b7f3b286-b88c-4023-95f7-3fdf8596c0b0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25948, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (5f311621-8d24-4089-94ac-380d60ab17d5)] -&gt; css selector: input[placeholder=&apos;Type for hints...&apos;]]
+Session ID: 5f311621-8d24-4089-94ac-380d60ab17d5
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -430,18 +300,11 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at utilities.Helper.waitAndClick(Helper.java:79)
-	at pages.AdminPage.clickUserRoleDropdown(AdminPage.java:41)
-	at test.AdminCreateUserTest.adminCanCreateUser(AdminCreateUserTest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at pages.AdminPage.enterEmployeeName(AdminPage.java:43)
+	at test.AdminCreateUserTest.adminCanCreateUser(AdminCreateUserTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Create a new user from the Admin panel)                  </em>
@@ -452,19 +315,19 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
                   <a name="confirmSuccessToast">
                   </a> <!-- confirmSuccessToast -->
                   <span class="method-name">confirmSuccessToast</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25948, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5f311621-8d24-4089-94ac-380d60ab17d5
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.Helper.waitForElementVisible(Helper.java:90)
-	at pages.AdminPage.getSuccessToast(AdminPage.java:146)
+	at utilities.Helper.waitForElementVisible(Helper.java:106)
+	at pages.AdminPage.getSuccessToast(AdminPage.java:129)
 	at test.AdminCreateUserTest.confirmSuccessToast(AdminCreateUserTest.java:76)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Verify success message appears after user creation)                  </em>
@@ -475,19 +338,29 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
                   <a name="newUserCanLogin">
                   </a> <!-- newUserCanLogin -->
                   <span class="method-name">newUserCanLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: p.oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.Helper.waitForElementVisible(Helper.java:90)
-	at pages.AdminDashboardPage.getProfileName(AdminDashboardPage.java:39)
-	at test.AdminCreateUserTest.newUserCanLogin(AdminCreateUserTest.java:105)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+Command: [5f311621-8d24-4089-94ac-380d60ab17d5, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25948, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5f311621-8d24-4089-94ac-380d60ab17d5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.LoginPage.enterUsername(LoginPage.java:18)
+	at test.AdminCreateUserTest.newUserCanLogin(AdminCreateUserTest.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Log in with the newly created user account)                  </em>
@@ -498,19 +371,29 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
                   <a name="newUserCanLogout">
                   </a> <!-- newUserCanLogout -->
                   <span class="method-name">newUserCanLogout</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: p.oxd-userdropdown-name (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: p.oxd-userdropdown-name
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28484, moz:profile: C:\Users\NOHA_N~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at utilities.Helper.waitForElementClickable(Helper.java:85)
-	at pages.AdminDashboardPage.openProfileDropdown(AdminDashboardPage.java:19)
+Command: [5f311621-8d24-4089-94ac-380d60ab17d5, findElement {value=p.oxd-userdropdown-name, using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25948, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5f311621-8d24-4089-94ac-380d60ab17d5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.AdminDashboardPage.openProfileDropdown(AdminDashboardPage.java:20)
 	at test.AdminCreateUserTest.newUserCanLogout(AdminCreateUserTest.java:125)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Log out from the new user account)                  </em>
@@ -518,6 +401,345 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-OrangeHRM_Sequential_Suite-class-failed -->
+          <div class="suite-OrangeHRM_Sequential_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.AdminDisableEmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanCreateUser">
+                  </a> <!-- adminCanCreateUser -->
+                  <span class="method-name">adminCanCreateUser</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element with the reference c8bcdaa2-9a86-4535-bf86-7734a3ff0aeb is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a689f1ed-79bb-4dbb-b81c-72eb08d15f3b, sendKeysToElement {value=[Ljava.lang.CharSequence;@3c116f26, id=c8bcdaa2-9a86-4535-bf86-7734a3ff0aeb}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4316, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (a689f1ed-79bb-4dbb-b81c-72eb08d15f3b)] -&gt; css selector: input[placeholder=&apos;Type for hints...&apos;]]
+Session ID: a689f1ed-79bb-4dbb-b81c-72eb08d15f3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at pages.AdminPage.enterEmployeeName(AdminPage.java:43)
+	at test.AdminDisableEmployeeTest.adminCanCreateUser(AdminDisableEmployeeTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that admin can create a new user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogin">
+                  </a> <!-- adminCanLogin -->
+                  <span class="method-name">adminCanLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: Admin login failed. expected [true] but found [false]
+	at test.AdminDisableEmployeeTest.adminCanLogin(AdminDisableEmployeeTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that admin can log in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmSuccessToast">
+                  </a> <!-- confirmSuccessToast -->
+                  <span class="method-name">confirmSuccessToast</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4316, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a689f1ed-79bb-4dbb-b81c-72eb08d15f3b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.Helper.waitForElementVisible(Helper.java:106)
+	at pages.AdminPage.getSuccessToast(AdminPage.java:129)
+	at test.AdminDisableEmployeeTest.confirmSuccessToast(AdminDisableEmployeeTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Confirm success toast after creating user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmSuccessToastAfterDisable">
+                  </a> <!-- confirmSuccessToastAfterDisable -->
+                  <span class="method-name">confirmSuccessToastAfterDisable</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.oxd-toast-content--success (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4316, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a689f1ed-79bb-4dbb-b81c-72eb08d15f3b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.Helper.waitForElementVisible(Helper.java:106)
+	at pages.AdminPage.getSuccessToast(AdminPage.java:129)
+	at test.AdminDisableEmployeeTest.confirmSuccessToastAfterDisable(AdminDisableEmployeeTest.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Confirm success toast after disabling user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="disableEmployeeUser">
+                  </a> <!-- disableEmployeeUser -->
+                  <span class="method-name">disableEmployeeUser</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@role=&apos;listbox&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4316, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a689f1ed-79bb-4dbb-b81c-72eb08d15f3b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utilities.Helper.waitForElementVisible(Helper.java:106)
+	at utilities.Helper.waitAndSelect(Helper.java:83)
+	at pages.AdminPage.filterByStatus(AdminPage.java:148)
+	at test.AdminDisableEmployeeTest.disableEmployeeUser(AdminDisableEmployeeTest.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Disable the newly created employee user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="disabledUserCannotLogin">
+                  </a> <!-- disabledUserCannotLogin -->
+                  <span class="method-name">disabledUserCannotLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;username&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [a689f1ed-79bb-4dbb-b81c-72eb08d15f3b, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4316, moz:profile: C:\Users\NOHA~1.NAB\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: a689f1ed-79bb-4dbb-b81c-72eb08d15f3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pages.LoginPage.enterUsername(LoginPage.java:18)
+	at test.AdminDisableEmployeeTest.disabledUserCannotLogin(AdminDisableEmployeeTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that a disabled user cannot log in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Sequential_Suite-class-failed -->
+          <div class="suite-OrangeHRM_Sequential_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.AdminLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogin">
+                  </a> <!-- adminCanLogin -->
+                  <span class="method-name">adminCanLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: Admin login failed. expected [true] but found [false]
+	at test.AdminLoginTest.adminCanLogin(AdminLoginTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that the admin user can log in successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Sequential_Suite-class-failed -->
+          <div class="suite-OrangeHRM_Sequential_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.AdminCreateUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanCreateUser">
+                  </a> <!-- adminCanCreateUser -->
+                  <span class="method-name">adminCanCreateUser</span>
+                  <em>
+(Create a new user from the Admin panel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogin">
+                  </a> <!-- adminCanLogin -->
+                  <span class="method-name">adminCanLogin</span>
+                  <em>
+(Verify that the admin can log into the dashboard)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogin">
+                  </a> <!-- adminCanLogin -->
+                  <span class="method-name">adminCanLogin</span>
+                  <em>
+(Verify that the admin can log into the dashboard)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogout">
+                  </a> <!-- adminCanLogout -->
+                  <span class="method-name">adminCanLogout</span>
+                  <em>
+(Log out from the admin account)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogout">
+                  </a> <!-- adminCanLogout -->
+                  <span class="method-name">adminCanLogout</span>
+                  <em>
+(Log out from the admin account)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmSuccessToast">
+                  </a> <!-- confirmSuccessToast -->
+                  <span class="method-name">confirmSuccessToast</span>
+                  <em>
+(Verify success message appears after user creation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newUserCanLogin">
+                  </a> <!-- newUserCanLogin -->
+                  <span class="method-name">newUserCanLogin</span>
+                  <em>
+(Log in with the newly created user account)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newUserCanLogout">
+                  </a> <!-- newUserCanLogout -->
+                  <span class="method-name">newUserCanLogout</span>
+                  <em>
+(Log out from the new user account)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Sequential_Suite-class-passed -->
+          <div class="suite-OrangeHRM_Sequential_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.AdminDisableEmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanCreateUser">
+                  </a> <!-- adminCanCreateUser -->
+                  <span class="method-name">adminCanCreateUser</span>
+                  <em>
+(Verify that admin can create a new user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogin">
+                  </a> <!-- adminCanLogin -->
+                  <span class="method-name">adminCanLogin</span>
+                  <em>
+(Verify that admin can log in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogout">
+                  </a> <!-- adminCanLogout -->
+                  <span class="method-name">adminCanLogout</span>
+                  <em>
+(Verify that admin can log out successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminCanLogout">
+                  </a> <!-- adminCanLogout -->
+                  <span class="method-name">adminCanLogout</span>
+                  <em>
+(Verify that admin can log out successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmSuccessToast">
+                  </a> <!-- confirmSuccessToast -->
+                  <span class="method-name">confirmSuccessToast</span>
+                  <em>
+(Confirm success toast after creating user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmSuccessToastAfterDisable">
+                  </a> <!-- confirmSuccessToastAfterDisable -->
+                  <span class="method-name">confirmSuccessToastAfterDisable</span>
+                  <em>
+(Confirm success toast after disabling user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="disableEmployeeUser">
+                  </a> <!-- disableEmployeeUser -->
+                  <span class="method-name">disableEmployeeUser</span>
+                  <em>
+(Disable the newly created employee user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="disabledUserCannotLogin">
+                  </a> <!-- disabledUserCannotLogin -->
+                  <span class="method-name">disabledUserCannotLogin</span>
+                  <em>
+(Verify that a disabled user cannot log in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Sequential_Suite-class-passed -->
           <div class="suite-OrangeHRM_Sequential_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -535,15 +757,6 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="adminCanLogin">
-                  </a> <!-- adminCanLogin -->
-                  <span class="method-name">adminCanLogin</span>
-                  <em>
-(Verify that the admin user can log in successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="adminCanLogout">
                   </a> <!-- adminCanLogout -->
                   <span class="method-name">adminCanLogout</span>
@@ -558,175 +771,6 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
                   <span class="method-name">adminCanLogout</span>
                   <em>
 (Verify that the admin user can log out)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Sequential_Suite-class-passed -->
-          <div class="suite-OrangeHRM_Sequential_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.AdminDisableEmployeeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanCreateUser">
-                  </a> <!-- adminCanCreateUser -->
-                  <span class="method-name">adminCanCreateUser</span>
-                  <em>
-(Verify that admin can create a new user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogin">
-                  </a> <!-- adminCanLogin -->
-                  <span class="method-name">adminCanLogin</span>
-                  <em>
-(Verify that admin can log in)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogin">
-                  </a> <!-- adminCanLogin -->
-                  <span class="method-name">adminCanLogin</span>
-                  <em>
-(Verify that admin can log in)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogout">
-                  </a> <!-- adminCanLogout -->
-                  <span class="method-name">adminCanLogout</span>
-                  <em>
-(Verify that admin can log out successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogout">
-                  </a> <!-- adminCanLogout -->
-                  <span class="method-name">adminCanLogout</span>
-                  <em>
-(Verify that admin can log out successfully)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="confirmSuccessToast">
-                  </a> <!-- confirmSuccessToast -->
-                  <span class="method-name">confirmSuccessToast</span>
-                  <em>
-(Confirm success toast after creating user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="confirmSuccessToastAfterDisable">
-                  </a> <!-- confirmSuccessToastAfterDisable -->
-                  <span class="method-name">confirmSuccessToastAfterDisable</span>
-                  <em>
-(Confirm success toast after disabling user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="disableEmployeeUser">
-                  </a> <!-- disableEmployeeUser -->
-                  <span class="method-name">disableEmployeeUser</span>
-                  <em>
-(Disable the newly created employee user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="disabledUserCannotLogin">
-                  </a> <!-- disabledUserCannotLogin -->
-                  <span class="method-name">disabledUserCannotLogin</span>
-                  <em>
-(Verify that a disabled user cannot log in)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Sequential_Suite-class-passed -->
-          <div class="suite-OrangeHRM_Sequential_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.AdminCreateUserTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanCreateUser">
-                  </a> <!-- adminCanCreateUser -->
-                  <span class="method-name">adminCanCreateUser</span>
-                  <em>
-(Create a new user from the Admin panel)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogin">
-                  </a> <!-- adminCanLogin -->
-                  <span class="method-name">adminCanLogin</span>
-                  <em>
-(Verify that the admin can log into the dashboard)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogin">
-                  </a> <!-- adminCanLogin -->
-                  <span class="method-name">adminCanLogin</span>
-                  <em>
-(Verify that the admin can log into the dashboard)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogout">
-                  </a> <!-- adminCanLogout -->
-                  <span class="method-name">adminCanLogout</span>
-                  <em>
-(Log out from the admin account)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adminCanLogout">
-                  </a> <!-- adminCanLogout -->
-                  <span class="method-name">adminCanLogout</span>
-                  <em>
-(Log out from the admin account)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="confirmSuccessToast">
-                  </a> <!-- confirmSuccessToast -->
-                  <span class="method-name">confirmSuccessToast</span>
-                  <em>
-(Verify success message appears after user creation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="newUserCanLogin">
-                  </a> <!-- newUserCanLogin -->
-                  <span class="method-name">newUserCanLogin</span>
-                  <em>
-(Log in with the newly created user account)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="newUserCanLogout">
-                  </a> <!-- newUserCanLogout -->
-                  <span class="method-name">newUserCanLogout</span>
-                  <em>
-(Log out from the new user account)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -734,7 +778,7 @@ Session ID: fd7c4824-8b87-447b-b27f-ffbdc1dd92c7
         </div> <!-- panel OrangeHRM_Sequential_Suite -->
         <div panel-name="test-xml-OrangeHRM_Sequential_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\NOHA\Software Engineering\Noha_Projects\OrangeHRM\src\test\resources\testng.xml</span>
+            <span class="header-content">D:\Automation\DEMO\OrangeHRM\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -836,128 +880,128 @@ data.addRows(30);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'disableEmployeeUser')
 data.setCell(0, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(0, 3, 13005);
+data.setCell(0, 3, 22505);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'newUserCanLogin')
+data.setCell(1, 1, 'confirmSuccessToast')
 data.setCell(1, 2, 'test.AdminCreateUserTest')
-data.setCell(1, 3, 11486);
+data.setCell(1, 3, 21633);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'confirmSuccessToast')
-data.setCell(2, 2, 'test.AdminCreateUserTest')
-data.setCell(2, 3, 10561);
+data.setCell(2, 1, 'confirmSuccessToastAfterDisable')
+data.setCell(2, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(2, 3, 21564);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'newUserCanLogout')
-data.setCell(3, 2, 'test.AdminCreateUserTest')
-data.setCell(3, 3, 10547);
+data.setCell(3, 1, 'confirmSuccessToast')
+data.setCell(3, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(3, 3, 21560);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'confirmSuccessToast')
-data.setCell(4, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(4, 3, 10536);
+data.setCell(4, 1, 'adminCanCreateUser')
+data.setCell(4, 2, 'test.AdminCreateUserTest')
+data.setCell(4, 3, 11399);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'confirmSuccessToastAfterDisable')
+data.setCell(5, 1, 'adminCanCreateUser')
 data.setCell(5, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(5, 3, 10527);
+data.setCell(5, 3, 11111);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'adminCanCreateUser')
+data.setCell(6, 1, 'newUserCanLogout')
 data.setCell(6, 2, 'test.AdminCreateUserTest')
-data.setCell(6, 3, 5489);
+data.setCell(6, 3, 5017);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'adminCanCreateUser')
-data.setCell(7, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(7, 3, 5435);
+data.setCell(7, 1, 'newUserCanLogin')
+data.setCell(7, 2, 'test.AdminCreateUserTest')
+data.setCell(7, 3, 5012);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'disableEmployeeUser')
+data.setCell(8, 1, 'disabledUserCannotLogin')
 data.setCell(8, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(8, 3, 4900);
+data.setCell(8, 3, 5012);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'adminCanCreateUser')
-data.setCell(9, 2, 'test.AdminCreateUserTest')
-data.setCell(9, 3, 3525);
+data.setCell(9, 1, 'disableEmployeeUser')
+data.setCell(9, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(9, 3, 3635);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'adminCanCreateUser')
-data.setCell(10, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(10, 3, 3524);
+data.setCell(10, 2, 'test.AdminCreateUserTest')
+data.setCell(10, 3, 2801);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'adminCanLogout')
-data.setCell(11, 2, 'test.AdminLoginTest')
-data.setCell(11, 3, 2859);
+data.setCell(11, 1, 'adminCanCreateUser')
+data.setCell(11, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(11, 3, 2639);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'adminCanLogout')
-data.setCell(12, 2, 'test.AdminLoginTest')
-data.setCell(12, 3, 1742);
+data.setCell(12, 2, 'test.AdminCreateUserTest')
+data.setCell(12, 3, 2427);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'adminCanLogin')
 data.setCell(13, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(13, 3, 1727);
+data.setCell(13, 3, 2405);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'newUserCanLogin')
+data.setCell(14, 1, 'adminCanLogin')
 data.setCell(14, 2, 'test.AdminCreateUserTest')
-data.setCell(14, 3, 1708);
+data.setCell(14, 3, 2291);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'adminCanLogin')
-data.setCell(15, 2, 'test.AdminCreateUserTest')
-data.setCell(15, 3, 1679);
+data.setCell(15, 2, 'test.AdminLoginTest')
+data.setCell(15, 3, 2288);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'disabledUserCannotLogin')
-data.setCell(16, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(16, 3, 1662);
+data.setCell(16, 1, 'confirmSuccessToast')
+data.setCell(16, 2, 'test.AdminCreateUserTest')
+data.setCell(16, 3, 1915);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'adminCanLogin')
-data.setCell(17, 2, 'test.AdminLoginTest')
-data.setCell(17, 3, 1590);
+data.setCell(17, 1, 'newUserCanLogin')
+data.setCell(17, 2, 'test.AdminCreateUserTest')
+data.setCell(17, 3, 1646);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'adminCanLogin')
-data.setCell(18, 2, 'test.AdminLoginTest')
-data.setCell(18, 3, 1557);
+data.setCell(18, 1, 'disabledUserCannotLogin')
+data.setCell(18, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(18, 3, 1566);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'adminCanLogin')
-data.setCell(19, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(19, 3, 1552);
+data.setCell(19, 1, 'adminCanLogout')
+data.setCell(19, 2, 'test.AdminLoginTest')
+data.setCell(19, 3, 1545);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'adminCanLogout')
-data.setCell(20, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(20, 3, 1536);
+data.setCell(20, 1, 'adminCanLogin')
+data.setCell(20, 2, 'test.AdminCreateUserTest')
+data.setCell(20, 3, 1508);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'adminCanLogin')
-data.setCell(21, 2, 'test.AdminCreateUserTest')
-data.setCell(21, 3, 1510);
+data.setCell(21, 1, 'confirmSuccessToast')
+data.setCell(21, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(21, 3, 1469);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'adminCanLogout')
-data.setCell(22, 2, 'test.AdminCreateUserTest')
-data.setCell(22, 3, 1484);
+data.setCell(22, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(22, 3, 1394);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'confirmSuccessToast')
-data.setCell(23, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(23, 3, 1462);
+data.setCell(23, 1, 'newUserCanLogout')
+data.setCell(23, 2, 'test.AdminCreateUserTest')
+data.setCell(23, 3, 1310);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'confirmSuccessToast')
-data.setCell(24, 2, 'test.AdminCreateUserTest')
-data.setCell(24, 3, 1439);
+data.setCell(24, 1, 'adminCanLogout')
+data.setCell(24, 2, 'test.AdminLoginTest')
+data.setCell(24, 3, 1234);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'adminCanLogout')
-data.setCell(25, 2, 'test.AdminCreateUserTest')
-data.setCell(25, 3, 1305);
+data.setCell(25, 1, 'confirmSuccessToastAfterDisable')
+data.setCell(25, 2, 'test.AdminDisableEmployeeTest')
+data.setCell(25, 3, 1062);
 data.setCell(26, 0, 26)
 data.setCell(26, 1, 'adminCanLogout')
-data.setCell(26, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(26, 3, 1301);
+data.setCell(26, 2, 'test.AdminCreateUserTest')
+data.setCell(26, 3, 917);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'disabledUserCannotLogin')
+data.setCell(27, 1, 'adminCanLogout')
 data.setCell(27, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(27, 3, 1299);
+data.setCell(27, 3, 911);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'newUserCanLogout')
-data.setCell(28, 2, 'test.AdminCreateUserTest')
-data.setCell(28, 3, 1252);
+data.setCell(28, 1, 'adminCanLogin')
+data.setCell(28, 2, 'test.AdminLoginTest')
+data.setCell(28, 3, 660);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'confirmSuccessToastAfterDisable')
+data.setCell(29, 1, 'adminCanLogin')
 data.setCell(29, 2, 'test.AdminDisableEmployeeTest')
-data.setCell(29, 3, 1075);
+data.setCell(29, 3, 572);
 window.suiteTableData['OrangeHRM_Sequential_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Sequential_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-OrangeHRM_Sequential_Suite">
               </div> <!-- times-div-OrangeHRM_Sequential_Suite -->
             </div> <!-- times-div -->
@@ -990,440 +1034,444 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4030 ms</span>
+                <span class="method-start">6322 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">adminCanLogin</span>
-                <span class="method-start">4126 ms</span>
+                <span class="method-start">6430 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=SUCCESS method=AdminLoginTest.adminCanLogin()[pri:1, instance:...)</span>
-                <span class="method-start">5726 ms</span>
+                <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=FAILURE method=AdminLoginTest.adminCanLogin()[pri:1, instance:...)</span>
+                <span class="method-start">7118 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">5732 ms</span>
+                <span class="method-start">8322 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogout</span>
-                <span class="method-start">5733 ms</span>
+                <span class="method-start">8324 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogout status=SUCCESS method=AdminLoginTest.adminCanLogout()[pri:2, instanc...)</span>
-                <span class="method-start">7477 ms</span>
+                <span class="method-start">9872 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7479 ms</span>
+                <span class="method-start">9875 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AdminCreateUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpDriver(chrome)</span>
-                <span class="method-start">8658 ms</span>
+                <span class="method-start">11196 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">11747 ms</span>
+                <span class="method-start">15691 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogin</span>
-                <span class="method-start">11749 ms</span>
+                <span class="method-start">15694 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=SUCCESS method=AdminCreateUserTest.adminCanLogin()[pri:1, inst...)</span>
-                <span class="method-start">13429 ms</span>
+                <span class="method-start">17208 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">13430 ms</span>
+                <span class="method-start">17210 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanCreateUser</span>
-                <span class="method-start">13431 ms</span>
+                <span class="method-start">17211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanCreateUser status=SUCCESS method=AdminCreateUserTest.adminCanCreateUser()[p...)</span>
-                <span class="method-start">18922 ms</span>
+                <span class="method-start">28612 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">18923 ms</span>
+                <span class="method-start">28614 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">confirmSuccessToast</span>
-                <span class="method-start">18924 ms</span>
+                <span class="method-start">28615 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=confirmSuccessToast status=SUCCESS method=AdminCreateUserTest.confirmSuccessToast()...)</span>
-                <span class="method-start">20364 ms</span>
+                <span class="method-start">30531 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">20365 ms</span>
+                <span class="method-start">30534 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogout</span>
-                <span class="method-start">20367 ms</span>
+                <span class="method-start">30536 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogout status=SUCCESS method=AdminCreateUserTest.adminCanLogout()[pri:4, in...)</span>
-                <span class="method-start">21673 ms</span>
+                <span class="method-start">32965 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21675 ms</span>
+                <span class="method-start">32969 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">newUserCanLogin</span>
-                <span class="method-start">21676 ms</span>
+                <span class="method-start">32971 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=newUserCanLogin status=SUCCESS method=AdminCreateUserTest.newUserCanLogin()[pri:5, ...)</span>
-                <span class="method-start">23385 ms</span>
+                <span class="method-start">34623 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">23388 ms</span>
+                <span class="method-start">34625 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">newUserCanLogout</span>
-                <span class="method-start">23390 ms</span>
+                <span class="method-start">34626 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=newUserCanLogout status=SUCCESS method=AdminCreateUserTest.newUserCanLogout()[pri:6...)</span>
-                <span class="method-start">24643 ms</span>
+                <span class="method-start">35937 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24646 ms</span>
+                <span class="method-start">35939 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AdminDisableEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpDriver(chrome)</span>
-                <span class="method-start">25827 ms</span>
+                <span class="method-start">37276 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">29084 ms</span>
+                <span class="method-start">41958 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">adminCanLogin</span>
-                <span class="method-start">29085 ms</span>
+                <span class="method-start">41961 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogin()[pri:1,...)</span>
-                <span class="method-start">30814 ms</span>
+                <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=FAILURE method=AdminDisableEmployeeTest.adminCanLogin()[pri:1,...)</span>
+                <span class="method-start">42537 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">30816 ms</span>
+                <span class="method-start">43628 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanCreateUser</span>
-                <span class="method-start">30817 ms</span>
+                <span class="method-start">43629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanCreateUser status=SUCCESS method=AdminDisableEmployeeTest.adminCanCreateUse...)</span>
-                <span class="method-start">36254 ms</span>
+                <span class="method-start">54743 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">36255 ms</span>
+                <span class="method-start">54744 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">confirmSuccessToast</span>
-                <span class="method-start">36256 ms</span>
+                <span class="method-start">54745 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=confirmSuccessToast status=SUCCESS method=AdminDisableEmployeeTest.confirmSuccessTo...)</span>
-                <span class="method-start">37719 ms</span>
+                <span class="method-start">56215 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">37721 ms</span>
+                <span class="method-start">56217 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">disableEmployeeUser</span>
-                <span class="method-start">37722 ms</span>
+                <span class="method-start">56222 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=disableEmployeeUser status=SUCCESS method=AdminDisableEmployeeTest.disableEmployeeU...)</span>
-                <span class="method-start">42623 ms</span>
+                <span class="method-start">59859 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">42625 ms</span>
+                <span class="method-start">59862 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">confirmSuccessToastAfterDisable</span>
-                <span class="method-start">42625 ms</span>
+                <span class="method-start">59864 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=confirmSuccessToastAfterDisable status=SUCCESS method=AdminDisableEmployeeTest.conf...)</span>
-                <span class="method-start">43701 ms</span>
+                <span class="method-start">60927 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">43702 ms</span>
+                <span class="method-start">60929 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogout</span>
-                <span class="method-start">43703 ms</span>
+                <span class="method-start">60930 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogout status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogout()[pri:...)</span>
-                <span class="method-start">45005 ms</span>
+                <span class="method-start">62325 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">45007 ms</span>
+                <span class="method-start">62327 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">disabledUserCannotLogin</span>
-                <span class="method-start">45009 ms</span>
+                <span class="method-start">62328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=disabledUserCannotLogin status=SUCCESS method=AdminDisableEmployeeTest.disabledUser...)</span>
-                <span class="method-start">46672 ms</span>
+                <span class="method-start">63895 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46673 ms</span>
+                <span class="method-start">63897 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AdminLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpDriver(firefox)</span>
-                <span class="method-start">47896 ms</span>
+                <span class="method-start">65212 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">52712 ms</span>
+                <span class="method-start">76686 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogin</span>
-                <span class="method-start">52713 ms</span>
+                <span class="method-start">76688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=SUCCESS method=AdminLoginTest.adminCanLogin()[pri:1, instance:...)</span>
-                <span class="method-start">54276 ms</span>
+                <span class="method-start">78977 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">54278 ms</span>
+                <span class="method-start">78978 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogout</span>
-                <span class="method-start">54279 ms</span>
+                <span class="method-start">78979 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogout status=SUCCESS method=AdminLoginTest.adminCanLogout()[pri:2, instanc...)</span>
-                <span class="method-start">57140 ms</span>
+                <span class="method-start">80215 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">57141 ms</span>
+                <span class="method-start">80221 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AdminCreateUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpDriver(firefox)</span>
-                <span class="method-start">58894 ms</span>
+                <span class="method-start">82352 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">63369 ms</span>
+                <span class="method-start">93818 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogin</span>
-                <span class="method-start">63370 ms</span>
+                <span class="method-start">93824 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=SUCCESS method=AdminCreateUserTest.adminCanLogin()[pri:1, inst...)</span>
-                <span class="method-start">64881 ms</span>
+                <span class="method-start">96116 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">64883 ms</span>
+                <span class="method-start">96118 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">adminCanCreateUser</span>
-                <span class="method-start">64883 ms</span>
+                <span class="method-start">96119 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanCreateUser status=FAILURE method=AdminCreateUserTest.adminCanCreateUser()[p...)</span>
-                <span class="method-start">68418 ms</span>
+                <span class="method-start">98926 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">68628 ms</span>
+                <span class="method-start">99105 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">confirmSuccessToast</span>
-                <span class="method-start">68628 ms</span>
+                <span class="method-start">99107 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=confirmSuccessToast status=FAILURE method=AdminCreateUserTest.confirmSuccessToast()...)</span>
-                <span class="method-start">79195 ms</span>
+                <span class="method-start">120743 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">79345 ms</span>
+                <span class="method-start">120910 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogout</span>
-                <span class="method-start">79346 ms</span>
+                <span class="method-start">120911 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogout status=SUCCESS method=AdminCreateUserTest.adminCanLogout()[pri:4, in...)</span>
-                <span class="method-start">80831 ms</span>
+                <span class="method-start">121831 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">121835 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">newUserCanLogin</span>
-                <span class="method-start">80833 ms</span>
+                <span class="method-start">121838 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">80833 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=newUserCanLogin status=FAILURE method=AdminCreateUserTest.newUserCanLogin()[pri:5, ...)</span>
-                <span class="method-start">92320 ms</span>
+                <span class="method-start">126856 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">92446 ms</span>
+                <span class="method-start">126995 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">newUserCanLogout</span>
-                <span class="method-start">92446 ms</span>
+                <span class="method-start">126996 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=newUserCanLogout status=FAILURE method=AdminCreateUserTest.newUserCanLogout()[pri:6...)</span>
-                <span class="method-start">102995 ms</span>
+                <span class="method-start">132017 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">103123 ms</span>
+                <span class="method-start">132152 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AdminDisableEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpDriver(firefox)</span>
-                <span class="method-start">104869 ms</span>
+                <span class="method-start">134292 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">109509 ms</span>
+                <span class="method-start">145198 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogin</span>
-                <span class="method-start">109510 ms</span>
+                <span class="method-start">145200 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogin status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogin()[pri:1,...)</span>
-                <span class="method-start">111063 ms</span>
+                <span class="method-start">147606 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">111065 ms</span>
+                <span class="method-start">147608 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">adminCanCreateUser</span>
-                <span class="method-start">111067 ms</span>
+                <span class="method-start">147609 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanCreateUser status=FAILURE method=AdminDisableEmployeeTest.adminCanCreateUse...)</span>
-                <span class="method-start">114593 ms</span>
+                <span class="method-start">150251 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">114715 ms</span>
+                <span class="method-start">150371 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">confirmSuccessToast</span>
-                <span class="method-start">114716 ms</span>
+                <span class="method-start">150372 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=confirmSuccessToast status=FAILURE method=AdminDisableEmployeeTest.confirmSuccessTo...)</span>
-                <span class="method-start">125254 ms</span>
+                <span class="method-start">171936 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">125386 ms</span>
+                <span class="method-start">172107 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">disableEmployeeUser</span>
-                <span class="method-start">125387 ms</span>
+                <span class="method-start">172109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=disableEmployeeUser status=FAILURE method=AdminDisableEmployeeTest.disableEmployeeU...)</span>
-                <span class="method-start">138394 ms</span>
+                <span class="method-start">194622 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">138530 ms</span>
+                <span class="method-start">194856 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">confirmSuccessToastAfterDisable</span>
-                <span class="method-start">138532 ms</span>
+                <span class="method-start">194857 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=confirmSuccessToastAfterDisable status=FAILURE method=AdminDisableEmployeeTest.conf...)</span>
-                <span class="method-start">149064 ms</span>
+                <span class="method-start">216425 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">149200 ms</span>
+                <span class="method-start">216579 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adminCanLogout</span>
-                <span class="method-start">149201 ms</span>
+                <span class="method-start">216580 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=adminCanLogout status=SUCCESS method=AdminDisableEmployeeTest.adminCanLogout()[pri:...)</span>
-                <span class="method-start">150738 ms</span>
+                <span class="method-start">217492 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">150740 ms</span>
+                <span class="method-start">217494 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">disabledUserCannotLogin</span>
-                <span class="method-start">150741 ms</span>
+                <span class="method-start">217495 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=disabledUserCannotLogin status=FAILURE method=AdminDisableEmployeeTest.disabledUser...)</span>
-                <span class="method-start">152041 ms</span>
+                <span class="method-start">222510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">152168 ms</span>
+                <span class="method-start">222649 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

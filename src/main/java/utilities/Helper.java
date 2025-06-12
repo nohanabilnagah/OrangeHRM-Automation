@@ -9,7 +9,6 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
-import java.util.List;
 import java.util.stream.Stream;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -73,6 +72,25 @@ public class Helper {
 		return new WebDriverWait(driver, Duration.ofSeconds(seconds));
 	}
 
+
+
+	// Waits for a custom dropdown to open and selects an option by visible text
+	public static void waitAndSelect(WebDriver driver, By dropdownLocator, String visibleText, int timeoutSeconds) {
+		// 1. Wait for and click dropdown to open options
+		waitFor(driver, timeoutSeconds).until(ExpectedConditions.elementToBeClickable(dropdownLocator)).click();
+
+		// 2. Wait for dropdown options container to appear (assumed role='listbox')
+		WebElement dropdownList = waitForElementVisible(driver, By.xpath("//div[@role='listbox']"), timeoutSeconds);
+
+		// 3. Find option by visible text inside the open listbox
+		WebElement option = dropdownList.findElement(By.xpath(".//span[text()='" + visibleText + "']"));
+
+		// 4. Wait until option clickable and click it
+		waitFor(driver, timeoutSeconds).until(ExpectedConditions.elementToBeClickable(option)).click();
+	}
+
+
+
 	// Waits for an element to be clickable, then clicks it using Actions
 	public static void waitAndClick(WebDriver driver, WebElement element, int timeoutSeconds)
 	{
@@ -80,31 +98,15 @@ public class Helper {
 		new Actions(driver).moveToElement(element).click().perform();
 	}
 
-	// Waits for an element located by the given locator to be clickable and returns it
-	public static WebElement waitForElementClickable(WebDriver driver, By locator, int timeoutSeconds) {
-		return waitFor(driver, timeoutSeconds).until(ExpectedConditions.elementToBeClickable(locator));
-	}
+
+
 
 	// /Waits for an element located by the given locator to be visible on the page, then returns it
 	public static WebElement waitForElementVisible(WebDriver driver, By locator, int timeoutSeconds) {
 		return waitFor(driver, timeoutSeconds).until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
-	// Waits for multiple elements to be visible and returns them as a list
-	public static List<WebElement> waitForElementsVisible(WebDriver driver, By locator, int timeoutSeconds) {
-		return waitFor(driver, timeoutSeconds).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
-	}
 
-	/*
-	// Waits until the specified element is no longer visible or removed from the page, up to the given timeout
-	public static void waitForElementInvisible(WebDriver driver, By locator, int timeoutSeconds)
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
-	}
-	*/
-
-	// Pause for a short number of milliseconds
 	public static void sleep(long milliseconds)
 	{
 		try {
@@ -114,13 +116,4 @@ public class Helper {
 		}
 	}
 
-	// Pause test execution for a specified number of seconds
-	public static void waitForNextTestClass(int seconds) {
-		try {
-			Thread.sleep(seconds * 1000L);
-		} catch (InterruptedException e) {
-			// Restore interrupted status and ignore
-			Thread.currentThread().interrupt();
-		}
-	}
 }

@@ -113,9 +113,7 @@ The current `testng.xml` file runs **sequentially** across two browsers (Chrome 
 
 You can update the suite to run tests **in parallel** by changing this:
 
-```xml
-<suite name="OrangeHRM Parallel Suite" parallel="tests" thread-count="2">
-```
+``` <suite name="OrangeHRM Parallel Suite" parallel="tests" thread-count="2"> ```
 
 💡 This will run tests simultaneously for different browsers, but you must ensure:
 
@@ -133,18 +131,83 @@ You can update the suite to run tests **in parallel** by changing this:
 ## 📊 Allure Report (After Test Execution)
 
 ### 🔧 Generate the Report
+#### ✅ Option 1: Using Allure CLI Commands
 
+**This is a flexible and manual method using the Allure Command Line Interface.
+
+**Step 1: Run your tests**
 ```bash
-allure generate allure-results --clean -o allure-report
+mvn clean test
+```
+This will execute your tests and generate Allure result files in:
+
+target/allure-results
+
+**Step 2: Generate the report from results**
+```bash
+allure generate target/allure-results --clean -o target/allure-report
 ```
 
-### 🔍 View the Report
-
+**Step 3: Open the report in your default browser**
 ```bash
-allure open allure-report
+allure open target/allure-report
 ```
+**📌 Pros:**
+- More flexible: works with any test results directory.
+- Quickly view reports without additional Maven configuration.
+- Great for fast local development and debugging.
 
-> 💡 **Tip:** Ensure Allure CLI is installed and accessible via terminal.
+**📌 Cons:**
+- Requires Allure CLI to be installed separately.
+- Manual step outside Maven lifecycle.
+- Not ideal for automated CI/CD environments unless scripted.
+
+
+
+#### ✅ Option 2: Using Maven Commands
+
+**This method integrates Allure report generation directly into the Maven lifecycle.
+
+**Step 1: Run your tests**
+```bash
+mvn clean test
+```
+This will execute your tests and generate Allure result files in:
+
+target/allure-results
+
+**Step 2: Generate the report**
+```bash
+mvn allure:report -Pallure-report
+```
+This will generate the HTML report in:
+
+target/allure-report
+
+📌 **Pros:**
+
+- Fully integrated with Maven. 
+- Clean separation between test execution and report generation. 
+- Ideal for CI/CD automation. 
+- Can be managed via Maven profiles.
+
+**📎 Note:** This method generates the report, but does not open it automatically.
+To view it, open the following file manually in your browser:
+
+target/allure-report/index.html
+
+
+**🤔 When to Use Which?**
+
+🏗️ **Use Maven commands** (```bash mvn clean test``` + ```bash mvn allure:report```) for fully automated workflows.
+
+Best for automated pipelines, consistent project configuration, and integration into CI/CD tools.
+
+💻 **Use Allure CLI** (```bash allure generate``` + ```bash allure open```) in Local Development.
+
+Best for local use, quick manual inspection, or if you want to avoid Maven configuration.
+
+
 
 ---
 

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRM Class-Synchronized Suite" parallel="tests" thread-count="2">
+
+  <!-- STEP 1: Run AdminLoginTest in parallel on both browsers -->
+  <test name="Chrome - Login">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminLoginTest"/>
+    </classes>
+  </test>
+
+  <test name="Firefox - Login">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.AdminLoginTest"/>
+    </classes>
+  </test>
+
+  <!-- STEP 2: Run AdminCreateUserTest in parallel after Login step -->
+  <test name="Chrome - CreateUser">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminCreateUserTest"/>
+    </classes>
+  </test>
+
+  <test name="Firefox - CreateUser">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.AdminCreateUserTest"/>
+    </classes>
+  </test>
+
+  <!-- STEP 3: Run AdminDisableEmployeeTest in parallel after CreateUser step -->
+  <test name="Chrome - DisableUser">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.AdminDisableEmployeeTest"/>
+    </classes>
+  </test>
+
+  <test name="Firefox - DisableUser">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.AdminDisableEmployeeTest"/>
+    </classes>
+  </test>
+
+</suite>
+
+==========================================================================
+==========================================================================
+Methods >> Ready if we need to use
+
+==========================================================================
+//Helper
+==========================================================================
+
+
+	/*
+
+		// Waits for multiple elements to be visible and returns them as a list
+    	public static List<WebElement> waitForElementsVisible(WebDriver driver, By locator, int timeoutSeconds) {
+    		return waitFor(driver, timeoutSeconds).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+    	}
+
+
+
+	    // Waits until the specified element is no longer visible or removed from the page, up to the given timeout
+	    public static void waitForElementInvisible(WebDriver driver, By locator, int timeoutSeconds)
+	    {
+		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+		    wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+	    }
+
+
+
+	// Waits for an element located by the given locator to be clickable and returns it
+	public static WebElement waitForElementClickable(WebDriver driver, By locator, int timeoutSeconds) {
+		return waitFor(driver, timeoutSeconds).until(ExpectedConditions.elementToBeClickable(locator));
+	}
+
+
+
+	    // Pause test execution for a specified number of seconds
+        public static void waitForNextTestClass(int seconds) {
+        	try {
+        		Thread.sleep(seconds * 1000L);
+        	} catch (InterruptedException e) {
+        		// Restore interrupted status and ignore
+        		Thread.currentThread().interrupt();
+        	}
+        }
+
+	*/
+
+	// Pause for a short number of milliseconds
+
+==========================================================================
+//AdminPage
+==========================================================================
+
+
+	public void filterByEmployeeName(String employeeName) {
+		WebElement filterEmployeeNameLocator = driver.findElement(By.xpath("//input[@placeholder='Type for hints...']"));
+		filterEmployeeNameLocator.clear();
+		filterEmployeeNameLocator.sendKeys(employeeName);
+		WebElement employeeNameSuggestion = Helper.waitForElementVisible(driver,
+				By.xpath("//div[@class='oxd-autocomplete-dropdown --positon-bottom']//span"), 10);
+		Helper.waitAndClick(driver, employeeNameSuggestion, 10);
+	}
+
+==========================================================================
+
+
+
+
+
+package utilities;
+
+import java.io.File;
+import java.io.IOException;
+
+public class TestSyncBarrier {
+
+    // Folder to store sync marker files
+    private static final String SYNC_FOLDER = "sync-locks/";
+
+    // Wait until another thread creates the marker file
+    public static void waitFor(String stepName) {
+        File file = new File(SYNC_FOLDER + stepName + ".done");
+        int maxWaitSeconds = 60;
+        int waited = 0;
+
+        while (!file.exists() && waited < maxWaitSeconds) {
+            Helper.sleep(1000); // wait 1 sec
+            waited++;
+        }
+
+        if (!file.exists()) {
+            throw new RuntimeException("Timeout waiting for sync: " + stepName);
+        }
+    }
+
+    // Create marker file to signal this step is done
+    public static void markDone(String stepName) {
+        try {
+            File dir = new File(SYNC_FOLDER);
+            if (!dir.exists() && !dir.mkdir()) {
+                throw new IOException("Failed to create sync folder");
+            }
+
+            File file = new File(SYNC_FOLDER + stepName + ".done");
+            if (!file.exists() && !file.createNewFile()) {
+                throw new IOException("Failed to create sync file: " + stepName);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to mark sync step: " + stepName, e);
+        }
+    }
+}
